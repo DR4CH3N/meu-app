@@ -11,8 +11,11 @@ const Conteudo = () => {
           molestiae facilis veritatis laborum ducimus, aperiam saepe sed,
           asperiores minima cumque.
         </p>
+
+        <Artigo />
+        <Artigo />
+        <Artigo />
       </section>
-      <Artigo />
     </main>
   );
 };
