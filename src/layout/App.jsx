@@ -1,5 +1,6 @@
 import Cabecalho from "../components/Cabecalho";
 import Conteudo from "../components/Conteudo";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 import Rodape from "../components/Rodape";
 
