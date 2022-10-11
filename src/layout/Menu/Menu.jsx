@@ -1,10 +1,12 @@
+import estilos from "./Menu.module.css";
+
 const Menu = () => {
   return (
-    <div>
+    <nav className={`${estilos.botoes} ${estilos.texto} `}>
       <a href="">Home</a>
       <a href="">Produtos</a>
       <a href="">Serviços</a>
-    </div>
+    </nav>
   );
 };
 

@@ -1,0 +1,9 @@
+.botoes {
+  background-color: red;
+}
+
+nav a {
+  text-transform: uppercase;
+  color: whitesmoke;
+  text-decoration: none;
+}

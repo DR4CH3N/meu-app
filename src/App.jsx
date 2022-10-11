@@ -1,7 +1,7 @@
-import Cabecalho from "./layout/Cabecalho";
-import Conteudo from "./layout/Conteudo";
+import Cabecalho from "./layout/Cabecalho/Cabecalho";
+import Conteudo from "./layout/Conteudo/Conteudo";
 
-import Rodape from "./layout/Rodape";
+import Rodape from "./layout/Rodape/Rodape";
 
 const App = () => {
   return (
