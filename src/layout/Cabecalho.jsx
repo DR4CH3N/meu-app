@@ -1,4 +1,4 @@
-import Menu from "../layout/Menu";
+import Menu from "./Menu";
 
 const estilos = {
   color: "white",
