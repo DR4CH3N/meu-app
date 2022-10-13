@@ -34,7 +34,7 @@ const Conteudo = () => {
           molestiae facilis veritatis laborum ducimus, aperiam saepe sed,
           asperiores minima cumque.
         </p>
-
+        {/* aplicando destructoring (desestruturação) no objeto */}
         {artigos.map(({ id, titulo, subtitulo, curso, texto }) => (
           // entre os parenteses abaixo ele esta fazendo um return, a versão atual é uma versão abreviada desta sintaxe
           <Artigo key={id} titulo={titulo} subtitulo={subtitulo} curso={curso}>
