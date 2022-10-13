@@ -1,15 +1,11 @@
-const Artigo = () => {
+const Artigo = (props) => {
   return (
-    <section>
-      <article>
-        <h3>Titulo qualquer</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima labore
-          deleniti optio explicabo repudiandae amet eius eos ducimus? Aspernatur
-          quisquam blanditiis assumenda nulla, iusto nostrum?
-        </p>
-      </article>
-    </section>
+    <article>
+      <h3> {props.titulo} </h3>
+      <h4> {props.subtitulo} </h4>
+      <h2> {props.curso} </h2>
+      <p> {props.children} </p>
+    </article>
   );
 };
 

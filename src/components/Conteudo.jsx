@@ -1,6 +1,7 @@
 import Artigo from "../layout/Artigo";
 
 const Conteudo = () => {
+  const cursos = ["arquitetura", "programação", "engenharia"];
   return (
     <main>
       <section>
@@ -12,9 +13,29 @@ const Conteudo = () => {
           asperiores minima cumque.
         </p>
 
-        <Artigo />
-        <Artigo />
-        <Artigo />
+        <Artigo
+          titulo="artigo 1"
+          subtitulo="subtitulo do artigo 1"
+          curso={cursos[0]}
+        >
+          Este é o texto do primeiro artigo
+        </Artigo>
+
+        <Artigo
+          titulo="artigo 2"
+          subtitulo="subtitulo do artigo 2"
+          curso={cursos[1]}
+        >
+          Este é o segundo
+        </Artigo>
+
+        <Artigo
+          titulo="artigo 3"
+          subtitulo="subtitulo do artigo 3"
+          curso={cursos[2]}
+        >
+          Este é o terceiro
+        </Artigo>
       </section>
     </main>
   );
