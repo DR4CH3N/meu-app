@@ -1,7 +1,26 @@
 import Artigo from "../layout/Artigo";
 
 const Conteudo = () => {
-  const cursos = ["arquitetura", "programação", "engenharia"];
+  const artigos = [
+    {
+      titulo: "artigo 1",
+      subtitulo: "este é o subtitulo do artigo 1",
+      texto: "este é o conteudo blah blah blah do artigo 1",
+      curso: "JS avançado",
+    },
+    {
+      titulo: "artigo 2",
+      subtitulo: "este é o subtitulo do artigo 2",
+      texto: "este é o conteudo sla do artigo 2",
+      curso: "React",
+    },
+    {
+      titulo: "artigo 3",
+      subtitulo: "este é o subtitulo do artigo 3",
+      texto: "este é o conteudo XYZ do artigo 3",
+      curso: "Node.JS",
+    },
+  ];
   return (
     <main>
       <section>
@@ -13,29 +32,17 @@ const Conteudo = () => {
           asperiores minima cumque.
         </p>
 
-        <Artigo
-          titulo="artigo 1"
-          subtitulo="subtitulo do artigo 1"
-          curso={cursos[0]}
-        >
-          Este é o texto do primeiro artigo
-        </Artigo>
-
-        <Artigo
-          titulo="artigo 2"
-          subtitulo="subtitulo do artigo 2"
-          curso={cursos[1]}
-        >
-          Este é o segundo
-        </Artigo>
-
-        <Artigo
-          titulo="artigo 3"
-          subtitulo="subtitulo do artigo 3"
-          curso={cursos[2]}
-        >
-          Este é o terceiro
-        </Artigo>
+        {artigos.map((artigo) => {
+          return (
+            <Artigo
+              titulo={artigo.titulo}
+              subtitulo={artigo.subtitulo}
+              curso={artigo.curso}
+            >
+              {artigo.texto}
+            </Artigo>
+          );
+        })}
       </section>
     </main>
   );
