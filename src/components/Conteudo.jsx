@@ -35,15 +35,10 @@ const Conteudo = () => {
           asperiores minima cumque.
         </p>
 
-        {artigos.map((artigo) => (
+        {artigos.map(({ id, titulo, subtitulo, curso, texto }) => (
           // entre os parenteses abaixo ele esta fazendo um return, a versão atual é uma versão abreviada desta sintaxe
-          <Artigo
-            key={artigo.id}
-            titulo={artigo.titulo}
-            subtitulo={artigo.subtitulo}
-            curso={artigo.curso}
-          >
-            {artigo.texto}
+          <Artigo key={id} titulo={titulo} subtitulo={subtitulo} curso={curso}>
+            {texto}
           </Artigo>
         ))}
       </section>
