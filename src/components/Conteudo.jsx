@@ -33,15 +33,14 @@ const Conteudo = () => {
         </p>
 
         {artigos.map((artigo) => {
-          return (
-            <Artigo
-              titulo={artigo.titulo}
-              subtitulo={artigo.subtitulo}
-              curso={artigo.curso}
-            >
-              {artigo.texto}
-            </Artigo>
-          );
+          // entre os parenteses abaixo ele esta fazendo um return
+          <Artigo
+            titulo={artigo.titulo}
+            subtitulo={artigo.subtitulo}
+            curso={artigo.curso}
+          >
+            {artigo.texto}
+          </Artigo>;
         })}
       </section>
     </main>
