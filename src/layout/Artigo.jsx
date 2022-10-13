@@ -1,10 +1,11 @@
-const Artigo = (props) => {
+const Artigo = ({ titulo, subtitulo, curso, children }) => {
   return (
+    // fazendo desestruturação acima e acessando ela abaixo
     <article>
-      <h3> {props.titulo} </h3>
-      <h4> {props.subtitulo} </h4>
-      <h2> {props.curso} </h2>
-      <p> {props.children} </p>
+      <h3> {titulo} </h3>
+      <h4> {subtitulo} </h4>
+      <h2> {curso} </h2>
+      <p> {children} </p>
     </article>
   );
 };
