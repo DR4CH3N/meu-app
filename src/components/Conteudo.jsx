@@ -32,16 +32,16 @@ const Conteudo = () => {
           asperiores minima cumque.
         </p>
 
-        {artigos.map((artigo) => {
-          // entre os parenteses abaixo ele esta fazendo um return
+        {artigos.map((artigo) => (
+          // entre os parenteses abaixo ele esta fazendo um return, a versão atual é uma versão abreviada desta sintaxe
           <Artigo
             titulo={artigo.titulo}
             subtitulo={artigo.subtitulo}
             curso={artigo.curso}
           >
             {artigo.texto}
-          </Artigo>;
-        })}
+          </Artigo>
+        ))}
       </section>
     </main>
   );
