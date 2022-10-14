@@ -1,4 +1,5 @@
-const home = () => {
+import Artigo from "../components/Artigo";
+const Home = () => {
   return (
     <>
       <h2>Pagina home</h2>
@@ -8,8 +9,11 @@ const home = () => {
         pariatur. Ad rerum iste inventore voluptate mollitia eveniet at vero
         nisi voluptates?
       </p>
+      <Artigo />
+      <Artigo />
+      <Artigo />
     </>
   );
 };
 
-export default home;
+export default Home;
